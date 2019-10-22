@@ -1,0 +1,60 @@
+table.diamondsweeper-board {
+
+  td {
+    padding: 0;
+    border: 1px solid black;
+  }
+}
+
+.cell {
+  height: 3.5rem;
+  width: 3.5rem;
+  background-size: contain;
+
+  &.diamond {
+    background-image: url(diamond.png);
+   
+  }
+
+  &.arrow {
+    background-image: url(arrow.png);
+  }
+
+  &.unknown {
+    background-image: url(question.png);
+  }
+}
+
+#root{
+  a{text-decoration: none}
+  transition:all 2s ease;
+  h1{font-family:'Gloria Hallelujah', cursive;}
+  position: relative;
+   div{
+     text-align: center;
+             div{
+              display: inline-block
+             }
+             .count{
+              margin:2rem;
+               display: block;
+               button{font-size: 2rem;}
+        
+                  p{
+                    font-size: 2rem;
+                    font-family: 'Gloria Hallelujah', cursive;
+                  }
+             }
+             .score{
+              
+               position: absolute;
+               transform: translate(-50%,-50%);
+               font-size: 2rem;
+               font-family: 'Gloria Hallelujah', cursive;
+               top:50%;
+               left:50%
+               
+             }
+
+    }
+}
